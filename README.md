@@ -80,29 +80,29 @@ nba-lineup-prediction/
   ```
 
 ### Steps to Run the Code
-1. **Data Preparation**:
-   - Place the raw data files in the `data/processed/` directory.
-   - Ensure the `allowed_features.txt` file is present in the `data/` directory.
-
-2. **Training the Model**:
+1. **Training the Model**:
    - Run the training pipeline:
      ```bash
      python main.py --train
      ```
    - This will preprocess the data, train the model, and save it to the `models/` directory.
 
-3. **Making Predictions**:
+2. **Making Predictions**:
    - Run the interactive prediction script:
      ```bash
      python main.py --predict
      ```
    - Follow the prompts to input lineup data and get the optimal fifth player recommendation.
 
-4. **Testing the Model**:
+3. **Testing the Model**:
    - Run the test script to evaluate the model on the provided test data:
      ```bash
      python test_script.py
      ```
+     - --row n to test a row
+     - --range n-m to test a range
+     - --detailed for full output
+     - --result to get accuracy of entire program
 
 ---
 
